@@ -1,0 +1,6 @@
+lane :test do
+  fileio_upload(
+    file: "README.md",
+    expiration: "1w"
+)
+end

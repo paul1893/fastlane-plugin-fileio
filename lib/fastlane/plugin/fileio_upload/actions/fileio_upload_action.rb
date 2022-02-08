@@ -3,6 +3,12 @@ require_relative '../helper/fileio_upload_helper'
 
 module Fastlane
   module Actions
+
+    module SharedValues
+      UPLOAD_FILE_RESULT = :UPLOAD_FILE_RESULT
+      UPLOAD_FILE_LINK = :UPLOAD_FILE_LINK
+    end
+
     class FileioUploadAction < Action
       def self.run(params)
         Actions.verify_gem!('rest-client')

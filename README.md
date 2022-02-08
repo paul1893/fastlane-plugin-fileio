@@ -9,6 +9,11 @@ This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To 
 ```bash
 fastlane add_plugin fileio_upload
 ```
+and add to your Gemfile
+
+```bash
+gem "rest-client"
+```
 
 ## About fileio_upload
 

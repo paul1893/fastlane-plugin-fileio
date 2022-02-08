@@ -31,6 +31,17 @@ fileio_upload(
 )
 ```
 
+You can also do something with handle the response:
+
+```ruby
+upload_result = fileio_upload(file: "file.zip", apiKey: ENV["FILEIO_API_TOKEN"])
+
+if (upload_result["success"]) then
+   link = upload_result["link"]
+else
+    UI.error("Uploading the file failed!")
+end
+```
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
